@@ -1,17 +1,17 @@
 const dryad_x = [
-	"ABC",
-	"DEF",
-	"GHJ",
-	"KI",
+	"ABCD",
+	"EFG",
+	"HIJ",
+	"KL",
 	"MN",
-	"PQR",
-	"ST",
-	"UV",
+	"OPQ",
+	"RS",
+	"TUV",
 	"WX",
-	"YZ",
+	"YZ"
 ];
-const dryad_y = ["ABCDEF", "GHIJKL", "MNOPQR", "STUVWXY"];
-const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXY".split("");
+const dryad_y = ["ABCD", "EFG", "HIJ", "KL", "MN", "OPQ", "RS", "TUV", "WX", "YZ"];
+const alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 const nato = [
 	"ALPHA",
 	"BRAVO",
@@ -246,12 +246,16 @@ function encrypt_text(sheet, first, second, text) {
 }
 
 const alpha_indexes = {
-	A: [0, 1], B: [0, 2], C: [0, 3], D: [1, 0],
-	E: [1, 1], F: [1, 2], G: [2, 0], H: [2, 1],
-	J: [2, 2], K: [3, 0], I: [3, 1], M: [4, 0],
-	N: [4, 1], P: [5, 0], Q: [5, 1], R: [5, 2],
-	S: [6, 0], T: [6, 1], U: [7, 0], V: [7, 1],
-	W: [8, 0], X: [8, 1], Y: [9, 0], Z: [9, 1],
+	A: [0, 0], B: [0, 1], C: [0, 2], D: [0, 3],
+	E: [1, 0], F: [1, 1], G: [1, 2], 
+	H: [2, 0], I: [2, 1], J: [2, 2],
+	K: [3, 0], L: [3, 1],
+	M: [4, 0], N: [4, 1],
+	O: [5, 0], P: [5, 1], Q: [5, 2],
+	R: [6, 0], S: [6, 1],
+	T: [7, 0], U: [7, 1], V: [7, 2],
+	W: [8, 0], X: [8, 1],
+	Y: [9, 0], Z: [9, 1]
 };
 const alpha_indexes_rev = Object.entries(alpha_indexes).reduce((acc, [k, v]) => { acc[v] = k; return acc; }, {});
 
