@@ -1,10 +1,10 @@
-title: hexylog
-author: Helena
-email: hexylena@galaxians.rog
+title: KTC-1400D
+author: Dakota
+email: webmaster@dakotaraine.xyz
 description: ""
 baseurl: ""
-url: "https://hexylena.galaxians.org/"
-github_username: hexylena
+url: "https://comradedakota.github.io/KTC-1400D-Generator"
+github_username: comradedakota
 
 # Build settings
 markdown: kramdown
